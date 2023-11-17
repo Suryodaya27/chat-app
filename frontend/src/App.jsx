@@ -35,7 +35,7 @@ const App = () => {
           setIsTyping(true);
           setTimeout(() => {
             setIsTyping(false);
-          }, 3000);
+          }, 1500);
         }
       });
     }
@@ -55,8 +55,8 @@ const App = () => {
   };
 
   return (
-    <div>
-      <h1>Chat Application</h1>
+    <div className='min-h-screen '>
+      <h1 className='text-center text-3xl py-4'>Chat Application</h1>
       <ChatBox messages={messages} currentUser={currentUser} isTyping={isTyping} />
       <InputForm text={text} handleChange={handleChange} sendMessage={sendMessage} />
     </div>
