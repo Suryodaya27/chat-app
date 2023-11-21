@@ -12,7 +12,7 @@ const ChatBox = ({ messages, currentUser, isTyping }) => {
   useEffect(scrollToBottom, [messages]);
 
   return (
-    <div className="bg-slate-400">
+    <div >
       <div
         style={{
           height: "300px",
@@ -22,6 +22,7 @@ const ChatBox = ({ messages, currentUser, isTyping }) => {
           margin: "30px",
           padding: "30px",
         }}
+        className=" bg-slate-50"
       >
         {messages.map((msg, index) => (
           <Message key={index} msg={msg} currentUser={currentUser} />

@@ -14,26 +14,23 @@ const InputForm = ({ text, handleChange, sendMessage }) => {
     >
       <input
         style={{
+          width: "300px",
           height: "35px",
           border: "1px solid #ccc",
-          borderRadius: "20px",
+          borderRadius: "15px",
           margin: "10px",
           padding: "10px",
         }}
+        placeholder="Enter your message..."
         type="text"
         value={text}
         onChange={handleChange}
       />
       <button
-        style={{
-          height: "35px",
-          margin: "10px",
-          padding: "10px",
-          alignContent: "center",
-        }}
         type="submit"
+        className="bg-blue-500 hover:bg-blue-700 text-white  py-2 px-4 rounded-lg"
       >
-        &rarr;
+        Send
       </button>
     </form>
   );
