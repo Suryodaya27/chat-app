@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import io from 'socket.io-client';
-import ChatBox from '../components/ChatBox';
-import InputForm from '../components/InputForm';
+import ChatBox from './components/ChatBox';
+import InputForm from './components/InputForm';
 
 
 
@@ -35,7 +35,7 @@ const App = () => {
           setIsTyping(true);
           setTimeout(() => {
             setIsTyping(false);
-          }, 1500);
+          }, 1000);
         }
       });
     }
